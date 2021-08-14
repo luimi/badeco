@@ -1,24 +1,24 @@
-#Extraer APK ya instalada
+# Extraer APK ya instalada
 
-### Requerimientos
+## Requerimientos
 
 - adb
 
-### Proceso
+## Proceso
 
-Para listar los paquetes instalados
+### Listar los paquetes instalados
 
 ```bash
 adb shell pm list packages
 ```
 
-Para imprimir la ubicacion de la instalacion
+### Imprimir la ubicacion de la instalacion
 
 ```bash
 adb shell pm path {nombre de paquete}
 ```
 
-Para extraer el apk
+### Extraer el apk
 
 ```bash
 adb pull {ruta/del/app}/base.apk
