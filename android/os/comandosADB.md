@@ -3,6 +3,8 @@
 ## Requerimientos
 - adb
 
+## Comandos
+
 ### Deshabilitar/habilitar notificaciones emergentes
 ```terminal
 adb shell settings put global heads_up_notifications_enabled {0/1}
