@@ -6,7 +6,7 @@
 ## Listado
 
 ### Capturar foto o seleccionar imagen de galeria
-- [ProPicker](https://github.com/shaon2016/ProPicker) permite editar la imagen después de tomarla o seleccionarla
+- [ProPicker](https://github.com/shaon2016/ProPicker) - permite editar la imagen después de tomarla o seleccionarla
 - [Android Image Picker](https://github.com/esafirm/android-image-picker)
 - [ImagePicker](https://github.com/Dhaval2404/ImagePicker)
 
@@ -18,7 +18,7 @@
 - [zxing](https://github.com/journeyapps/zxing-android-embedded)
 
 ### Layout
-- [SlidingUpPanel](https://github.com/umano/AndroidSlidingUpPanel)
+- [SlidingUpPanel](https://github.com/umano/AndroidSlidingUpPanel) - Panel deslisable
 
 ### REST API
 - [Retrofit](https://square.github.io/retrofit/)
@@ -33,7 +33,7 @@
 - [Room](https://developer.android.com/training/data-storage/room)
 
 ### Vistas
-- [SlideToAct](https://github.com/cortinico/slidetoact) Botón slider
+- [SlideToAct](https://github.com/cortinico/slidetoact) - Botón slider
 
 ### Mapas
 - [GoogleMaps](https://developers.google.com/maps/documentation/android-sdk/overview?hl=es-419)
