@@ -18,7 +18,7 @@
 - [zxing](https://github.com/journeyapps/zxing-android-embedded)
 
 ### Layout
-- [SlidingUpPanel](https://github.com/umano/AndroidSlidingUpPanel) - Panel deslisable
+- [SlidingUpPanel](https://github.com/umano/AndroidSlidingUpPanel) - Panel deslizable
 
 ### REST API
 - [Retrofit](https://square.github.io/retrofit/)
