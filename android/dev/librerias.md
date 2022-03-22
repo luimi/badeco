@@ -38,3 +38,6 @@
 ### Mapas
 - [GoogleMaps](https://developers.google.com/maps/documentation/android-sdk/overview?hl=es-419)
 - [MapBox](https://www.mapbox.com/)
+
+### WebSockets
+- [Java-WebSocket](https://github.com/TooTallNate/Java-WebSocket)
