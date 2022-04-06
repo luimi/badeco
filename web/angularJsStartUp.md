@@ -15,9 +15,9 @@
     <script src="app.js"></script>
 </head>
 
-<body ng-controller="MainController as ctrl">
-    <h1>{{ctrl.title}}</h1>
-    <button ng-click="ctrl.action()">ChangeTitle</button>
+<body ng-controller="MainController">
+    <h1>{{title}}</h1>
+    <button ng-click="action()">ChangeTitle</button>
 </body>
 
 </html>
@@ -27,10 +27,10 @@
 
 ```javascript
 angular.module('angularApp', [])
-    .controller('MainController', function () {
-        this.title = "Title";
-        this.action = function () {
-            this.title = "Changed";
+    .controller('MainController', function ($scope) {
+        $scope.title = "Title";
+        $scope.action = function () {
+            $scope.title = "Changed";
         }
     });
 ```
