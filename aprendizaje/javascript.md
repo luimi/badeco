@@ -2,13 +2,19 @@
 
 ## Conceptos
 
-*Proxy* - captura eventos de un objeto
-*parametro* in variable - verifica que una variable tenga un parametro inicializado
-*IntersectionObserver* - evento para ver en que tanto de una vista se esta viendo 
-*call,bind y apply* - metodos heredados de function
-*‘use strict’;* - uso estricto de la sintaxis del lenguaje
-*closure* - retornar una función dentro de una función, la ejecuta también, se puede llamar al closure simple como nombre() y tambien por las subfunciones nombre()() incluyendo valores
-*hoisting* - asignación de functions antes del tiempo de ejecución
+**Proxy** - captura eventos de un objeto
+
+**parametro** in variable - verifica que una variable tenga un parametro inicializado
+
+**IntersectionObserver** - evento para ver en que tanto de una vista se esta viendo 
+
+**call,bind y apply** - metodos heredados de function
+
+**‘use strict’;** - uso estricto de la sintaxis del lenguaje
+
+**closure** - retornar una función dentro de una función, la ejecuta también, se puede llamar al closure simple como nombre() y tambien por las subfunciones nombre()() incluyendo valores
+
+**hoisting** - asignación de functions antes del tiempo de ejecución
 
 
 ## Función auto ejecutable 
