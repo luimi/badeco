@@ -85,6 +85,35 @@ sudo chown -R www-data:www-data /var/www/html
 sudo apt install mariadb-server
 ```
 
+> CORS
+
+Modificar /var/www/html/webservice/dispatcher.php
+
+```
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Methods: HEAD, GET, POST, PUT, PATCH, DELETE, OPTIONS");
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method,Access-Control-Request-Headers, Authorization, Output-Format");
+header('Content-Type: application/json');
+$method = $_SERVER['REQUEST_METHOD'];
+if ($method == "OPTIONS") {
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method,Access-Control-Request-Headers, Authorization, Output-Format");
+header("HTTP/1.1 200 OK");
+die();
+}
+```
+
+> Parece que la ruta del servicio web no funciona. Si está utilizando httpd/apache2, debe habilitar la reescritura de URL en su servidor
+
+Modificar /etc/apache2/apache2.conf , buscar y modificar el mas parecido
+```
+<Directory /var/www/>
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Require all granted
+</Directory>
+```
+
 ---
 
 [Documentacion](https://docs.prestashop-project.org/v.8-documentation/v/english/getting-started/installing-prestashop "‌")
