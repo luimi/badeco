@@ -75,6 +75,7 @@ Ingresa a la url del servidor y realiza la instalacion
 
 ```
 sudo chown -R www-data:www-data /var/www/html
+sudo chown -R www-data:www-data *
 ```
 
 ‌
