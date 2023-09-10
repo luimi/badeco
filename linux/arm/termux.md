@@ -1,4 +1,22 @@
-## VNC
+## SSH
+
+### Instalar
+
+```
+pkg install openssh
+```
+
+### Iniciar
+
+```
+sshd
+```
+
+### Conectar
+
+> ssh {ip} -p 8022
+
+## Ubuntu (arm64)
 
 ### Instalar
 
@@ -24,20 +42,26 @@ vncserver-start
 
 > vnc://{ip}:5901
 
-## SSH
+## Termux-desktop (aarch64)
 
 ### Instalar
 
 ```
-pkg install openssh
+pkg upgrade && pkg install git
+git clone --depth=1 https://github.com/adi1090x/termux-desktop.git
+cd termux-desktop
+chmod +x setup.sh
+./setup.sh --install
 ```
+
+> Despues de instalar, cerrar termux y volver a iniciar
 
 ### Iniciar
 
 ```
-sshd
+startdesktop
 ```
 
 ### Conectar
 
-> ssh {ip} -p 8022
+> vnc://{ip}:5901
