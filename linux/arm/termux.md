@@ -6,6 +6,11 @@
 pkg install openssh
 ```
 
+### Asignar contraseña
+
+```
+passwd
+```
 ### Iniciar
 
 ```
