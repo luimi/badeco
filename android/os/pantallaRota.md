@@ -27,11 +27,13 @@
 ### Paso 1
 - Configuración> Acerca del teléfono/dispositivo> Numero de compilación> 7 veces
 - Ajustes> Sistema> Acerca del dispositivo> Numero de compilación> 7 veces
+- Configuración> Acerca del teléfono> Todas las especificaciones> Versión MIUI> 5 veces
 
 ### Paso 2
 - Configuración> Programador> Depuración por USB
 - Configuración> Sistema> Opciones avanzadas> Desarrollador> Depuración por USB
 - Ajustes> Sistema> Opciones del programador> Depuración por USB
+- Configuración> Ajustes adicionales> Opciones de desarrollador> Depuración USB
 
 ## Rootear
 - King root
