@@ -7,6 +7,7 @@
 - Custom recovery [OrangeFox](https://orangefox.download/es-ES/device/garden "‌"), [TWRP](http://www.mediafire.com/file/lzlvfhnlxvpkkg8/342+Redmi+9A.rar/file "‌") , [vbmeta](https://unofficialtwrp.com/wp-content/uploads/2019/11/vbmeta.zip "‌")
 - Guias - [XdaDev](https://xdaforums.com/c/redmi-9a.10997/ "‌")
 - Roms - [Stock](https://xiaomifirmwareupdater.com/miui/dandelion/ "‌") , [XiaomiFirmware](https://xiaomifirmware.com/roms/download-custom-roms-for-redmi-9a/ "‌")
+- Fastboot
 
 ## Desbloquear Bootloader
 
