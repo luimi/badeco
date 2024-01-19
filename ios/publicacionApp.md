@@ -115,7 +115,7 @@ Todo referente a la compañía
 - Obligatorio> Url de soporte
 - Obligatorio> Url de marketing
 - Obligatorio> Información para revisión (contacto nombre, teléfono, correo e indicaciones del uso del app)
-- Obligatorio> capturas 6.5’’ (1284 × 2778 pixeles), 5.5’’ (1242 × 2208 pixeles iphone 8 plus), 12.9’’ (2048 × 2732 pixeles)
+- Obligatorio> capturas 6.5’’ (1284 × 2778 pixeles iphone 14 plus), 5.5’’ (1242 × 2208 pixeles iphone 8 plus), 12.9’’ (2048 × 2732 pixeles ipad pro)
 
 ### Información del App
 
