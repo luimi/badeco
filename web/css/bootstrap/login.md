@@ -4,8 +4,11 @@
     <div class="col-md-6 col-sm-12 bg-body-tertiary d-flex align-items-center">
         <main class="w-75 m-auto">
             <form>
-                <img class="mb-4 " src="..." />
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <img class=" mx-auto" src="..." width="100" height="100"/>
+                </div>
                 <h1 class="h3 mb-3 fw-normal text-center">Bienvenido</h1>
+
                 <div class="form-floating">
                     <input type="text" class="form-control" id="floatingInput" placeholder="Usuario" name="username" />
                     <label for="floatingInput">Usuario</label>
@@ -19,6 +22,8 @@
             </form>
         </main>
     </div>
-    <div class="d-none d-md-block col-md-6 bg-primary"></div>
+    <div class="d-none d-md-block col-md-6 bg-primary">
+
+    </div>
 </div>
 ```
