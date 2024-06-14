@@ -3,7 +3,7 @@
 <div class="row vh-100">
     <div class="col-md-6 col-sm-12 bg-body-tertiary d-flex align-items-center">
       <main class="w-75 m-auto">
-            <form onSubmit={login}>
+            <form>
                 <img class="mb-4 " src="..." />
                 <h1 class="h3 mb-3 fw-normal text-center">Bienvenido</h1>
 
