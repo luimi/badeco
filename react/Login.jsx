@@ -1,8 +1,12 @@
 import Parse from 'parse';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Login = () => {
     const navigate = useNavigate();
+    useEffect(() => {
+        if(Parse.User.current()) goToMain()
+    }, [])
     const login = async (evt) => {
         evt.preventDefault();
         const {username, password} = evt.target;
@@ -12,10 +16,13 @@ const Login = () => {
         }
         try{
             await Parse.User.logIn(username.value, password.value)
-            navigate("/main")
+            goToMain()
         }catch(e) {
             alert(e.message)
         }
+    }
+    const goToMain = () => {
+        navigate("/main")
     }
     return <div>
         <form onSubmit={login}>
