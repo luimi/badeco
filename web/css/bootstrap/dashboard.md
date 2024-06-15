@@ -13,8 +13,8 @@
       <canvas class="d-none d-md-block" width="200" height="0"></canvas>
       <div class="flex-grow-1 overflow-y-scroll">
         <!-- Modulos -->
-        <div class="rounded-pill text-bg-primary px-4 py-2">
-          <a href="#" class="nav-link" aria-current="page">
+        <div class="rounded-pill px-4 py-2 text-bg-primary">
+          <a href="#" class="nav-link text-truncate" style="max-width: 150px;" aria-current="page">
             <span class="pe-none">🏠</span>
             <span class="d-none d-md-inline ms-2">Home </span>
           </a>
