@@ -19,7 +19,7 @@ export class LoginPage implements OnInit {
   constructor(private formBuilder: FormBuilder, private router: Router) { }
 
   ngOnInit() {
-    if(Parse.User.current()) this.goToMain()
+    if (Parse.User.current()) this.goToMain()
   }
 
   async login() {
@@ -30,12 +30,31 @@ export class LoginPage implements OnInit {
     this.isLoading = true;
     let user = this.loginForm.value;
     try {
-      await Parse.User.logIn(user.username, user.password)
-      this.goToMain()
+      let _user = await Parse.User.logIn(user.username, user.password)
+      if (!this.isActive(_user)) {
+        this.logout()
+        alert("Usuario no activo en la plataforma")
+      } else if (!await this.hasRoles(_user)) {
+        this.logout()
+        alert("Usuario no posee un rol activo en la plataforma")
+      } else {
+        this.goToMain()
+      }
     } catch (e: any) {
       alert("Usuario y/o contraseña invalido")
     }
     this.isLoading = false;
+  }
+  isActive(user: any) {
+    return user.get('isActive')
+  }
+  async hasRoles(user: any) {
+    let roles = await new Parse.Query(Parse.Role).equalTo('users', user).find()
+    console.log("hasRoles", roles.length > 0)
+    return roles.length > 0
+  }
+  async logout() {
+    await Parse.User.logOut()
   }
   goToMain() {
     this.router.navigate(["/main"])
