@@ -50,7 +50,6 @@ export class LoginPage implements OnInit {
   }
   async hasRoles(user: any) {
     let roles = await new Parse.Query(Parse.Role).equalTo('users', user).find()
-    console.log("hasRoles", roles.length > 0)
     return roles.length > 0
   }
   async logout() {
