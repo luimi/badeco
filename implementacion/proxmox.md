@@ -4,6 +4,23 @@
 
 - USB ~4gb
 
+## Comandos útiles
+
+> Interfaces de red
+```bash
+ip a
+```
+
+> Reiniciar servicio de red
+```bash
+systemctl restart networking
+```
+
+> Ver log de red
+```bash
+journalctl -u networking
+```
+
 ## Post instalacion
 
 ### Puntos
