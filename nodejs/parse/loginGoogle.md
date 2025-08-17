@@ -15,6 +15,7 @@ npm i @react-oauth/google
 
 ```html
 <script>
+    import { GoogleLogin, googleLogout, GoogleOAuthProvider } from '@react-oauth/google';
     const handleSuccess = (response: any) => {
         console.log('Login Success:', response);
         loginWithGoogle(response.credential)
@@ -37,6 +38,8 @@ npm i @react-oauth/google
         //    Esto crea una sesión y guarda el usuario en localStorage.
         await Parse.User.logInWith('google', { authData: authData});
         console.log("Usuario logueado exitosamente:", Parse.User.current());
+
+        googleLogout();
 
         } catch (error) {
         console.error("Error al iniciar sesión con Google:", error);
