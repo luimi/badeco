@@ -27,6 +27,14 @@ docker run -t -i -p 5000:5000 -v "${PWD}:/data" osrm/osrm-backend osrm-routed --
 
 ## Proceso
 
+### Instalar dependencias
+
+```terminal
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update -y
+sudo apt-get install -y libstdc++-9-dev
+```
+
 ### Procesar el archivo .pbf
 
 ```bash
