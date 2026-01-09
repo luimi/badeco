@@ -7,6 +7,7 @@
 - Transmisión de pantalla Chromecast
 - Transmisión de pantalla Miracast
 - MHL, SlimPort, USB-C -> HDMI
+- [srccpy](https://github.com/Genymobile/scrcpy/tags)
 
 ### Keyboard - Atajos
 - **Win+n** > Despliega barra de notificaciones
@@ -43,18 +44,21 @@
 
 ## Instalar no keyboard
 - [No Keyboard](https://play.google.com/store/apps/details?id=io.github.visnkmr.nokeyboard)
-- [Null Keyboard](https://apkcombo.com/es/null-keyboard/com.wparam.nullkeyboard/)
+- [No Keyboard (APK)](https://apkcombo.com/es/no-keyboard-hideable-keyboard/io.github.visnkmr.nokeyboard/)
+- [Null Keyboard (APK)](https://apkcombo.com/es/null-keyboard/com.wparam.nullkeyboard/)
 
 ## Habilitar ADB Wifi siempre
 agregar a /system/build.prop, service.adb.tcp.port=5555
 
+## Habilitar confiar cualquier computador
+agregar o modificar a /system/build.prop, ro.adb.secure=0
+
+### Modificar build.prop
+
 - [BuildProp Editor](https://play.google.com/store/apps/details?id=com.jrummy.apps.build.prop.editor)
+- [BuildProp Editor (APK)](https://apkcombo.com/es/buildprop-editor/com.jrummy.apps.build.prop.editor/)
 - [Manual](https://xatom.dev/2014/07/26/edit-build-prop-using-adb)
 
-## Habilitar confiar cualquier computador
-adb root
-| adbd cannot run as root in production builds
-adb disable-verity
 
 ### Puede quedar como:
 - Consola o emulación - Display bueno
