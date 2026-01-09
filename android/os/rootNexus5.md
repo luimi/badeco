@@ -3,21 +3,36 @@
 - Fastboot
 - TWRP
 - [Archivos](https://download.chainfire.eu/363/CF-Root/CF-Auto-Root/CF-Auto-Root-hammerhead-hammerhead-nexus5.zip)
+- [Drivers](https://developer.android.com/studio/run/win-usb?hl=es-419)
 
 ## Proceso
 
-### Entrar en modo recovery
+### Entrar en modo fastboot
 
 ```
+# Convinacion de teclas
 volup + voldown + power
+
+# ADB
+adb reboot bootloader
+
 ```
 
-### Usar el script
+## Automatico
+
+### Windows
+
+```
+root-windows
+```
+
+### Linux
+
 ```
 sh root-linux.sh
 ```
 
-## Manualmente
+## Manual
 
 ### Hacer fastboot ejecutable
 
