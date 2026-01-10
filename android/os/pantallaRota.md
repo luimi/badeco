@@ -50,9 +50,6 @@
 ## Habilitar ADB Wifi siempre
 agregar a /system/build.prop, service.adb.tcp.port=5555
 
-## Habilitar confiar cualquier computador
-agregar o modificar a /system/build.prop, ro.adb.secure=0
-
 ### Modificar build.prop
 
 - [BuildProp Editor](https://play.google.com/store/apps/details?id=com.jrummy.apps.build.prop.editor)
