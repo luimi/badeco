@@ -28,13 +28,27 @@ journalctl -u networking
 - Verificar que pueda hacer boot sin la USB puesta
 - Instalar PVE Post install desde [Aquí](https://community-scripts.github.io/ProxmoxVE/)
 
+### Configurar GRUB
+
+```bash
+# Abrir documento de grub
+nano /etc/default/grub
+# Modificar y agregar estas lineas
+GRUB_TIMEOUT=0
+GRUB_RECORDFAIL_TIMEOUT=$GRUB_TIMEOUT
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
+# Salir y ejecutar
+update-grub
+# Reiniciar
+```
+
 ### Cerrar laptop
 
 Configurar para poder cerrar la tapa del portátil
 
 ```bash
 # Abrir documento de configuración
-nano etc/systemd/logind.conf
+nano /etc/systemd/logind.conf
 # Descomentar y modificar estas lineas
 handleLidSwitch=ignore
 handleLidSwitchExternalPower=ignore
