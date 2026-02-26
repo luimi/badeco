@@ -1,0 +1,16 @@
+# Instalar XAPK
+
+# Requerimientos
+- Archivo XAPK
+- Descompresor zip
+
+# Proceso
+
+- Renombrar el archivo XAPK a <nombre>.zip
+- Descomprimir en nueva carpeta
+- Entrar en la carpeta
+- Instalar
+
+```bash
+adb install-multiple *.apk
+```
