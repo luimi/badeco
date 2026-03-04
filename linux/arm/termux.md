@@ -21,7 +21,23 @@ sshd
 
 > ssh {ip} -p 8022
 
-## Ubuntu (arm64)
+## Ubuntu
+
+### Instalar 
+
+```
+pkg update && pkg upgrade -y
+pkg install proot-distro
+proot-distro install ubuntu
+```
+
+### Iniciar
+
+```
+proot-distro login ubuntu
+```
+
+## Ubuntu-desktop (arm64)
 
 ### Instalar
 
