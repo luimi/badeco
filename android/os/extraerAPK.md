@@ -4,7 +4,7 @@
 
 - adb
 
-## Proceso
+## Proceso adb
 
 ### Listar los paquetes instalados
 
@@ -23,3 +23,7 @@ adb shell pm path {nombre de paquete}
 ```bash
 adb pull {ruta/del/app}/base.apk
 ```
+
+## Proceso AntiSplit M
+
+Descargar e instalar [apk](https://github.com/AbdurazaaqMohammed/AntiSplit-M)
