@@ -86,3 +86,28 @@ startdesktop
 ### Conectar
 
 > vnc://{ip}:5901
+
+## Termux-DroidDesk
+
+### Instalar
+
+```
+curl -sL https://raw.githubusercontent.com/orailnoor/DroidDesk/main/termux-linux-setup.sh -o setup.sh
+bash setup.sh
+```
+
+
+### Iniciar
+
+```
+bash ~/start-vnc.sh
+```
+
+### Conectar
+
+```
+{ip}:5901
+```
+
+### Fuente
+[DroidDesk](https://github.com/orailnoor/DroidDesk)
