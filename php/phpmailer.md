@@ -82,3 +82,25 @@ try {
     echo json_encode(["error" => "Error al enviar: {$mail->ErrorInfo}"]);
 }
 ```
+
+### Uso
+```javascript
+const myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+
+const urlencoded = new URLSearchParams();
+urlencoded.append("destinatary", "user@domain.com");
+urlencoded.append("subject", "Email test");
+urlencoded.append("body", "<h1>hello</h1>");
+urlencoded.append("password", "tu_password_seguro_aqui");
+
+const requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    body: urlencoded,
+    redirect: "follow"
+};
+
+let result = await fetch("http://domain.com/phpmailer.php", requestOptions);
+result = await result.json();
+```
