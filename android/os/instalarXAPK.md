@@ -1,10 +1,10 @@
 # Instalar XAPK
 
-# Requerimientos
+## Requerimientos
 - Archivo XAPK
 - Descompresor zip
 
-# Proceso
+## Proceso
 
 - Renombrar el archivo XAPK a <nombre>.zip
 - Descomprimir en nueva carpeta
